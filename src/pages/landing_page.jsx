@@ -63,12 +63,12 @@ class SanmaLanding extends Component {
                   buttonName={this.sanma_buttontext} >
               </SanmaHome>
           </div>
-          <div id="como" style={{'position':'relative', 'height':1000, 'top':100, 'left':0, 'right':0, 'z-index':4}}>
+          <div id="como" style={{'position':'relative', 'top':0, 'left':0, 'right':0, 'z-index':4}}>
               <SanmaComo title="Cómo funciona"
                   steps={this.sanma_steps} >
               </SanmaComo>
           </div>
-          <div id="porque">
+          <div id="porque" style={{'position':'relative', 'height':'700px', 'top':0, 'left':0, 'right':0, 'z-index':4}}>
               PORQUE
           </div>
           <div id="tienda">

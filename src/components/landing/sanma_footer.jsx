@@ -48,7 +48,7 @@ export default class SanmaFooter extends Component {
                             <Row className='verticalalign'>
                                 {this.secciones.map((seccion) =>
                                     <Col key={seccion.to} sm={12} md={12} lg={12} xl={12} className='seccionestitles'>
-                                        <Link to={seccion.to} spy={true} smooth={true} delay={0} duration={800} offset={-25}>{seccion.title}</Link>
+                                        <Link to={seccion.to} spy={true} smooth={true} delay={0} duration={800} offset={0}>{seccion.title}</Link>
                                     </Col>
                                 )}
                             </Row>
@@ -74,7 +74,7 @@ export default class SanmaFooter extends Component {
                             <div className='col2descripcion'>
                                 {this.secciones.map((seccion) =>
                                     <Col key={seccion.to} xs4={4} xs8={8} sm8={8} className='seccionestitles'>
-                                        <Link to={seccion.to} spy={true} smooth={true} delay={0} duration={800} offset={-25}>{seccion.title}</Link>
+                                        <Link to={seccion.to} spy={true} smooth={true} delay={0} duration={800} offset={0}>{seccion.title}</Link>
                                     </Col>
                                 )}
                             </div>

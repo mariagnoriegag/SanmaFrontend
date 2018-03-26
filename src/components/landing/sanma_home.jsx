@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../../styles/home.css'
-import BackgroundHome from '../../assets/sanmabackend.png'
-import FlechaAbajo from '../../assets/flecha-abajo.svg'
+import BackgroundHome from '../../assets/sanmabackend.png';
+import BackgroundHomeMobile from '../../assets/sanmabackendmobile.png'
+import FlechaAbajo from '../../assets/flecha-abajo.svg';
 import SanmaToolbar from './sanma_toolbar';
 import PrincipalButton from './sanma_principalbutton';
 import {Col, Grid, Row} from 'react-material-responsive-grid';
@@ -52,10 +53,15 @@ export default class SanmaHome extends Component {
     render() {
         var verticalposition = this.state.windowHeight - 50;
         var imgmodelheight = this.state.windowHeight*0.80;
-        var imgmodelheighttiny = this.state.windowHeight*0.50;
+        var imgmodelheighttiny = this.state.windowHeight*0.40;
         return (
             <Grid style={{'margin':0, 'padding':0}}>
-                <img className='absoluteposition right0 zindex1' src={BackgroundHome} alt='BackgroundHome'></img>
+                <Col className='absoluteposition right0 zindex1' hidden={['xs4']} xs8={8} sm8={8} sm={12} md={12} lg={12} xl={12} style={{'margin':0, 'padding':0}}>
+                    <img className='absoluteposition right0 zindex1' src={BackgroundHome} alt='BackgroundHome'></img>
+                </Col>
+                <Col className='absoluteposition right0 zindex1' hidden={['xs8', 'sm8', 'sm', 'md', 'lg', 'xl']} xs4={4} style={{'margin':0, 'padding':0}}>
+                    <img className='absoluteposition right0 zindex1' src={BackgroundHomeMobile} alt='BackgroundHomeMobile'></img>
+                </Col>
                 <Col hidden={['xs4', 'xs8', 'sm8']} sm={12} md={12} lg={12} xl={12} style={{'margin':0, 'padding':0}}>
                     <div className='relativeposition left0 right0 zindex2'>
                         <SanmaToolbar logo={this.logo}
@@ -84,7 +90,7 @@ export default class SanmaHome extends Component {
                         </Col>
                         <Col sm={2} md={2} lg={2} xl={2}></Col>
                     </Row>
-                    <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={-25}>
+                    <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={0}>
                         <div className='zindex3 relativeposition movingvertically'>
                             <img className='' alt='FlechaAbajo' src={FlechaAbajo}></img>
                         </div>
@@ -117,7 +123,7 @@ export default class SanmaHome extends Component {
                             </Row>
                         </Col>
                     </Row>
-                    <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={-25}>
+                    <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={0}>
                         <div className='zindex3 relativeposition movingvertically'>
                             <img className='' alt='FlechaAbajo' src={FlechaAbajo}></img>
                         </div>
@@ -143,7 +149,7 @@ export default class SanmaHome extends Component {
                                     <h1 className={text12.css}>{text12.text}</h1>
                                 </Col>
                             )}
-                            <Col xs4={4} style={{'margin':0, 'padding':'30px 0 0 0'}} className=''>
+                            <Col xs4={4} style={{'margin':0, 'padding':'10px 0 0 0'}} className=''>
                                 <PrincipalButton buttonName={this.buttonName}>
                                 </PrincipalButton>
                             </Col>
@@ -151,7 +157,7 @@ export default class SanmaHome extends Component {
                         </Col>
                     </Row>
                     <Row style={{'margin':0, 'padding':'0 0 25px 0'}}></Row>
-                    <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={-25}>
+                    <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={0}>
                         <div className='zindex3 relativeposition movingvertically'>
                             <img className='' alt='FlechaAbajo' src={FlechaAbajo}></img>
                         </div>

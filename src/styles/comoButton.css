@@ -27,6 +27,13 @@ p {
     font-weight: 300;
     font-size: 15px;
 }
+.sanma-comobutton {
+    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+}
 .sanma-comobutton a {
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -53,9 +60,21 @@ a .buttoncomosettings:hover {
     0%      {background:#A9E7A0;}
     100%    {background:#77CDD9;}
 }
+@media (max-width: 839px) {
+  .buttoncomosettings {
+    font-size: 14px;
+    padding: 9px 20px 9px 20px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
 @media (max-width: 479px) {
   .buttoncomosettings {
-    font-size: 17px;
-    padding: 16px 30px 16px 30px;
+    font-size: 15px;
+    padding: 9px 20px 9px 20px;
+  }
+  p {
+      font-size: 15px;
   }
 }
