@@ -1,0 +1,77 @@
+.sanmafooter {
+    color: #0E2033;
+}
+.footercol1 {
+    background-color: #A9E7A0;
+}
+.footercol2 {
+    background-color: #9FD996;
+}
+.verticalalign {
+    height: 100%;
+    align-content: center;
+}
+.horizontalalign {
+    text-align: center;
+    width: 100%;
+}
+.footercorreo {
+    padding: 10px 0 10px 0;
+    font-weight: 300;
+}
+.paddingtopbottom {
+    padding: 30px 0 30px 0;
+}
+.paddingtopbottom-mobile {
+    padding: 10px 20px 10px 20px;
+}
+.seccionestitles {
+    padding: 10px 0 10px 0;
+    font-weight: 300;
+}
+.footercol3 {
+    background-color: #95CD8D;
+}
+.sanmadescripcion{
+    padding: 10px 30px 0 30px;
+}
+.logofooter  {
+    height: 45px;
+}
+.font {
+    font-size: 14px;
+}
+@media (max-width:839px) {
+    .font {
+        font-size: 13px;
+    }
+    .sanmadescripcion {
+        padding: 10px 30px 0 30px;
+    }
+    .col2descripcion {
+        padding: 10px 30px 0 30px;
+    }
+}
+@media (max-width:599px) {
+    .col2descripcion {
+        padding: 0 30px 0 30px;
+    }
+}
+.sanmafooter a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.sanmafooter a:link {
+    text-decoration: none;
+}
+.sanmafooter a:visited {
+    background-color: cyan;
+}
+.sanmafooter a:hover {
+    color: none;
+    cursor:pointer;
+}
+.sanmafooter a:active {
+    text-decoration: none;
+    background-color: transparent;
+}

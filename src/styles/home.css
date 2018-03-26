@@ -1,0 +1,81 @@
+
+.zindex1{
+    z-index: 1;
+}
+.zindex2 {
+    z-index: 2;
+}
+.zindex3 {
+    z-index: 3;
+}
+.relativeposition {
+    position: relative;
+}
+.absoluteposition {
+    position: absolute;
+}
+.left0 {
+    left: 0;
+}
+.right0 {
+    right: 0;
+}
+.imgmodelposition {
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
+.top0 {
+    top:0;
+}
+.verticalalign {
+    height: 100%;
+    align-content: center;
+}
+.font1 {
+    font-family: 'Gabriela', serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+.font2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+}
+/* font-family: 'Cinzel Decorative', cursive;
+font-family: 'Gabriela', serif; */
+.movingvertically {
+    animation: movingAnimated 1s infinite;
+}
+a .movingvertically {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a .movingvertically :link {
+    text-decoration: none;
+}
+a .movingvertically :visited {
+    background-color: cyan;
+}
+a .movingvertically :hover {
+    cursor:pointer;
+}
+a .movingvertically :active {
+    text-decoration: none;
+    background-color: transparent;
+}
+@keyframes movingAnimated
+{
+    0%      {top:0;}
+    50%     {top:10px;}
+    100%    {top:0;}
+}
+@media (max-width: 479px) {
+  .font1 {
+    font-size: 25px;
+  }
+  .font2 {
+      font-size: 20px;
+  }
+
+}

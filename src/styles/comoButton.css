@@ -1,0 +1,61 @@
+h2 {
+    font-family: 'Quicksand', sans;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    color: #2A6F7F;
+}
+p {
+    font-family: 'Quicksand', sans;
+    font-weight: 300;
+    font-size: 15px;
+}
+.comotitle {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 35px;
+}
+.buttoncomosettings {
+    display: inline-block;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #A9E7A0;
+    background: #A9E7A0;
+    padding: 10px 23px 10px 23px;
+    color: #2A6F7F;
+    font-weight: 300;
+    font-size: 15px;
+}
+.sanma-comobutton a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.sanma-comobutton a:link {
+    text-decoration: none;
+}
+.sanma-comobutton a:visited {
+    background-color: cyan;
+}
+a .buttoncomosettings:hover {
+    background: #77CDD9;
+    animation: backgroundComoColorAnimated 0.4s 1;
+    cursor:pointer;
+    color: #A9E7A0;
+    font-weight: 400;
+}
+.sanma-comobutton a:active {
+    text-decoration: none;
+    background-color: transparent;
+}
+@keyframes backgroundComoColorAnimated
+{
+    0%      {background:#A9E7A0;}
+    100%    {background:#77CDD9;}
+}
+@media (max-width: 479px) {
+  .buttoncomosettings {
+    font-size: 17px;
+    padding: 16px 30px 16px 30px;
+  }
+}

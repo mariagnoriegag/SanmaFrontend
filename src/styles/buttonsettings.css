@@ -1,0 +1,42 @@
+.buttonsettings {
+    display: inline-block;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #2A6F7F;
+    background: #2A6F7F;
+    padding: 18px 43px 18px 43px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+}
+.sanma-button a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.sanma-button a:link {
+    text-decoration: none;
+}
+.sanma-button a:visited {
+    background-color: cyan;
+}
+a .buttonsettings:hover {
+    background: #5DDAC0;
+    animation: backgroundColorAnimated 0.4s 1;
+    cursor:pointer;
+    color: #2A6F7F;
+}
+.sanma-button a:active {
+    text-decoration: none;
+    background-color: transparent;
+}
+@keyframes backgroundColorAnimated
+{
+    0%      {background:#2A6F7F;}
+    100%    {background:#5DDAC0;}
+}
+@media (max-width: 479px) {
+  .buttonsettings {
+    font-size: 17px;
+    padding: 16px 30px 16px 30px;
+  }
+}

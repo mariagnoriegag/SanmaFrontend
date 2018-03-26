@@ -1,0 +1,12 @@
+.loginicon path{
+    fill: #ffffff;
+}
+.loginicon:hover path{
+    fill: #2A6F7F;
+}
+.carticon path{
+    fill: #ffffff;
+}
+.carticon:hover path{
+    fill: #2A6F7F;
+}
