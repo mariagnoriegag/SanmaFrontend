@@ -1,0 +1,33 @@
+.zindex1{
+    z-index: 1;
+}
+.zindex2 {
+    z-index: 2;
+}
+.zindex3 {
+    z-index: 3;
+}
+.relativeposition {
+    position: relative;
+}
+.absoluteposition {
+    position: absolute;
+}
+.left0 {
+    left: 0;
+}
+.right0 {
+    right: 0;
+}
+.top0 {
+    top:0;
+}
+.movingvertically {
+    animation: movingAnimated 1s infinite;
+}
+@keyframes movingAnimated
+{
+    0%      {top:0;}
+    50%     {top:10px;}
+    100%    {top:0;}
+}

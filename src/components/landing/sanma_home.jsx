@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import '../../styles/home.css'
 import BackgroundHome from '../../assets/sanmabackend.png';
 import BackgroundHomeMobile from '../../assets/sanmabackendmobile.png'
-import FlechaAbajo from '../../assets/flecha-abajo.svg';
 import SanmaToolbar from './sanma_toolbar';
 import PrincipalButton from './sanma_principalbutton';
 import {Col, Grid, Row} from 'react-material-responsive-grid';
 import {Events, Link, scrollSpy} from 'react-scroll';
+import FlechaAbajo from '../landing/flecha_abajo'
 
 export default class SanmaHome extends Component {
 
@@ -91,9 +91,7 @@ export default class SanmaHome extends Component {
                         <Col sm={2} md={2} lg={2} xl={2}></Col>
                     </Row>
                     <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={0}>
-                        <div className='zindex3 relativeposition movingvertically'>
-                            <img className='' alt='FlechaAbajo' src={FlechaAbajo}></img>
-                        </div>
+                        <FlechaAbajo color="#ffffff"></FlechaAbajo>
                     </Link>
                     <Row style={{'margin':0, 'padding':'0 0 10px 0'}}></Row>
                 </Col>
@@ -124,9 +122,7 @@ export default class SanmaHome extends Component {
                         </Col>
                     </Row>
                     <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={0}>
-                        <div className='zindex3 relativeposition movingvertically'>
-                            <img className='' alt='FlechaAbajo' src={FlechaAbajo}></img>
-                        </div>
+                        <FlechaAbajo color="#ffffff"></FlechaAbajo>
                     </Link>
                     <Row style={{'margin':0, 'padding':'0 0 10px 0'}}></Row>
                 </Col>
@@ -158,9 +154,7 @@ export default class SanmaHome extends Component {
                     </Row>
                     <Row style={{'margin':0, 'padding':'0 0 25px 0'}}></Row>
                     <Link to={'como'} spy={true} smooth={true} delay={0} duration={800} offset={0}>
-                        <div className='zindex3 relativeposition movingvertically'>
-                            <img className='' alt='FlechaAbajo' src={FlechaAbajo}></img>
-                        </div>
+                        <FlechaAbajo color="#ffffff"></FlechaAbajo>
                     </Link>
                     <Row style={{'margin':0, 'padding':'0 0 10px 0'}}></Row>
                 </Col>

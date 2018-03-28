@@ -1,0 +1,58 @@
+.zindex1{
+    z-index: 1;
+}
+.zindex2 {
+    z-index: 2;
+}
+.zindex3 {
+    z-index: 3;
+}
+.relativeposition {
+    position: relative;
+}
+.absoluteposition {
+    position: absolute;
+}
+.left0 {
+    left: 0;
+}
+.right0 {
+    right: 0;
+}
+.top0 {
+    top: 0;
+}
+.background-position {
+    top: -60px;
+}
+.porquetitle {
+    text-transform: uppercase;
+    color: #0E2033;
+    font-weight: 400;
+    font-size: 35px;
+}
+.porquemision {
+    color: #0E2033;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 0 20% 0 20%;
+}
+.porque-caracteristicas {
+    font-family: 'Baumans', cursive;
+    text-transform: uppercase;
+    color: #0E2033;
+    font-size: 25px;
+    padding: 0 0 65px 0;
+}
+@media (max-width: 839px) {
+}
+@media (max-width: 479px) {
+    .porquemision {
+        font-size: 20px;
+        padding: 0 20% 0 20%;
+    }
+    .porque-caracteristicas {
+        font-size: 18px;
+        padding: 0 0 45px 0;
+    }
+}

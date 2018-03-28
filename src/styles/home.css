@@ -42,8 +42,6 @@
     font-weight: 300;
     font-size: 26px;
 }
-/* font-family: 'Cinzel Decorative', cursive;
-font-family: 'Gabriela', serif; */
 .movingvertically {
     animation: movingAnimated 1s infinite;
 }

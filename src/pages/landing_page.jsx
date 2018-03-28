@@ -14,7 +14,9 @@ import imgStep4 from '../assets/img-step-4.png'
 
 import SanmaHome from '../components/landing/sanma_home';
 import SanmaComo from '../components/landing/sanma_como'
+import SanmaPorque from '../components/landing/sanma_porque'
 import SanmaFooter from '../components/landing/sanma_footer';
+import SanmaTienda from '../components/landing/sanma_tienda'
 
 class SanmaLanding extends Component {
 
@@ -38,7 +40,11 @@ class SanmaLanding extends Component {
         {title: "Toma tus medidas", img: imgStep3, text: "Tómate medidas y llena con ellas los campos correspondientes.", textButton: "Mira cómo hacerlo"},
         {title: "Paga y espera", img: imgStep4, text: "Elige el método de pago, danos tu ubicación y en 15 días tu pedido llegará.", textButton: "Mira cómo hacerlo"},
     ]
-
+    this.porque_caracteristicas = [
+        {name: "Define tu silueta", id:"caracteristica1"},
+        {name: "Estilo propio", id:"caracteristica2"},
+        {name: "Altos estándares de calidad", id:"caracteristica3"}
+    ]
     this.footer_descripcion = "Nos preocupamos por cada fase del proceso, desde el diseño hasta la entrega del producto para que recibas lo mejor.";
     this.footer_secciones = [
         {title: "Volver a inicio", href: '#sanma', to: 'sanma'},
@@ -68,23 +74,24 @@ class SanmaLanding extends Component {
                   steps={this.sanma_steps} >
               </SanmaComo>
           </div>
-          <div id="porque" style={{'position':'relative', 'height':'700px', 'top':0, 'left':0, 'right':0, 'z-index':4}}>
-              PORQUE
+          <div id="porque" style={{'position':'relative', 'top':0, 'left':0, 'right':0, 'z-index':4}}>
+              <SanmaPorque title="Porqué a medida"
+                  mision="Nuestra misión es otorgar a las mujeres un armario único con su propio estilo que revele su personalidad."
+                  caracteristicas={this.porque_caracteristicas}>
+              </SanmaPorque>
           </div>
-          <div id="tienda">
-              TIENDA
-              <div id="blusas"></div>
-              <div id="vestidos"></div>
-              <div id="pantalones"></div>
-              <div id="faldas"></div>
+          <div id="tienda" style={{'position':'relative', 'top':0, 'left':0, 'right':0, 'z-index':4}}>
+              <SanmaTienda title="Tienda"></SanmaTienda>
           </div>
-          <SanmaFooter logo={logodark}
-              descripcion={this.footer_descripcion}
-              secciones={this.footer_secciones}
-              correo={this.footer_correo}>
-          </SanmaFooter>
-          <div className='derechosreservados'>
-              © {this.year} SANMA, Inc. Todos los derechos reservados.
+          <div id="footer" style={{'position':'relative', 'top':0, 'left':0, 'right':0, 'z-index':4}}>
+              <SanmaFooter logo={logodark}
+                  descripcion={this.footer_descripcion}
+                  secciones={this.footer_secciones}
+                  correo={this.footer_correo}>
+              </SanmaFooter>
+              <div className='derechosreservados'>
+                  © {this.year} SANMA, Inc. Todos los derechos reservados.
+              </div>
           </div>
       </div>
     );
